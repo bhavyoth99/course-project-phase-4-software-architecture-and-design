@@ -1,0 +1,302 @@
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 95%;
+    background: #fff;
+    padding: 20px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px 0px #00000033;
+}
+
+h1 {
+    color: #333;
+}
+
+label {
+    font-weight: bold;
+    color: #555;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.card-container {
+    position: relative;
+    min-width: 100px; /* You can adjust this value */
+}
+
+
+@media screen and (max-width: 768px) {
+    .card-container {
+        min-width: 80px; /* You can adjust this value for smaller screens */
+    }
+}
+
+
+
+h1 {
+    text-align: center;
+    color: #5a6268; /* Gray color */
+}
+
+
+
+
+.card-checkbox {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+
+
+/* Style for the Submit button */
+.btn-submit {
+    background: linear-gradient(90deg, #007bff 0%, #0056b3 100%);
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 30px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Style for the Next Try button */
+.btn-warning {
+    background: linear-gradient(90deg, #ffc107 0%, #ff9800 100%);
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 30px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+.btn-warning:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Style for both buttons */
+.btn-large {
+    background: none;
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 30px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    width: 200px; /* Set the width */
+    display: block; /* Make the buttons block-level */
+    margin: 10px auto; /* Center the buttons */
+}
+
+.btn-submit {
+    background: linear-gradient(90deg, #007bff 0%, #0056b3 100%);
+    color: white;
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.15);
+}
+
+.btn-warning {
+    background: linear-gradient(90deg, #ffc107 0%, #ff9800 100%);
+    color: white;
+}
+
+.btn-warning:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+
+/* Style for the card container */
+.card-container {
+    border: 1px solid #e0e0e0; /* Light gray border */
+    border-radius: 5px;       /* Rounded corners */
+    padding: 15px;            /* Inner spacing */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+}
+
+.card-container:hover {
+    transform: translateY(-5px); /* Lift the card slightly on hover */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Increase shadow depth on hover */
+}
+
+/* Adjustments for the card image */
+.card-img {
+    max-width: 100%;
+    border-radius: 4px; /* Rounded corners for the image */
+}
+
+/* Style for the card columns for added spacing */
+.card-col {
+    margin-bottom: 20px; /* More space at the bottom */
+}
+
+
+/* Main Container Style */
+.container {
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Welcome Message Style */
+.welcome-message {
+    font-size: 20px;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Custom Button Style */
+.btn-start {
+    background: linear-gradient(90deg, #007bff 0%, #0056b3 100%);
+    color: white;
+    padding: 15px 40px;
+    font-size: 18px;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+.btn-start:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Game Rules Style */
+.game-rules {
+    background: #eef5fc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+
+h1.text-center {
+    font-size: 36px;
+    color: #007bff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+h1.text-center {
+    font-size: 40px;
+    color: #343a40;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.welcome-message {
+    font-size: 18px;
+    color: #5a6268;
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+.game-rules h3 {
+    font-size: 26px;
+    color: #343a40;
+    border-bottom: 3px solid #dcdcdc;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.game-rules ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.game-rules li {
+    padding: 10px 0;
+    font-size: 18px;
+    position: relative;
+    font-weight: 500;
+}
+
+.game-rules li:before {
+    content: "\2022";
+    font-size: 30px;
+    position: absolute;
+    left: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #007bff;
+}
+
+.btn-start {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.btn-start:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+    color: white;
+}
+
+.form-group label {
+    font-size: 18px;
+    color: #343a40;
+    font-weight: 600;
+}
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Art Dealer Game - Start</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="{% static 'js/script.js' %}"></script>
+</head>
+<body>
+<!-- Inside Body Tag -->
+<div class="container mt-5">
+    <h1 class="text-center">Welcome to The Art Dealer Game</h1>
+    <p class="welcome-message">Embark on an adventurous journey to discover unique patterns and challenge yourself. Choose your level and enter the world of art!</p>
+    <div class="row">
+        <div class="col-md-6">
+            <form action="{% url 'start_game' %}" method="post" class="mt-4">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="level">Choose the Level:</label>
+                    <select name="level" id="level" class="form-control">
+                        <option value="K-2">K-2</option>
+                        <option value="3-5">3-5</option>
+                        <option value="6-8">6-8</option>
+                    </select>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-start">Start Game</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <div class="game-rules">
+                <h3 class="text-center">Game Rules</h3>
+                <ul>
+                    <li>Choose a level and start the game.</li>
+                    <li>Select exactly 4 cards each turn.</li>
+                    <li>The goal is to find 4 cards that match a secret pattern.</li>
+                    <li>Keep trying until you discover the pattern and win the game!</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Optional Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

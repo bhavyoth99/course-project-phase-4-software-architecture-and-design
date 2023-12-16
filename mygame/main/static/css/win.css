@@ -1,0 +1,56 @@
+.btn-play-again {
+    background: linear-gradient(90deg, #007bff 0%, #0056b3 100%);
+    color: white;
+    padding: 15px 40px;
+    font-size: 18px;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+.btn-play-again:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.15);
+}
+
+.victory-message {
+    font-size: 24px;
+    color: #007bff;
+    margin-top: 20px;
+    font-weight: bold;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #007bff;
+    }
+    to {
+        text-shadow: 0 0 20px #007bff, 0 0 30px #007bff, 0 0 40px #007bff;
+    }
+}
+
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.3);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    70% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.congratulations-heading {
+    animation: bounceIn 1s;
+    font-size: 40px;
+    color: #007bff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+}
